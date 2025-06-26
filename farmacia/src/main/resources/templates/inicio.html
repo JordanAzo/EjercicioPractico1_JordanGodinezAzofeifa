@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="layout/plantilla :: head"></head>
+
+<body>
+    <div th:replace="layout/plantilla :: header"></div>
+
+    <main class="container my-5" th:fragment="content">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/0f5P0D1eVLU" title="Video informativo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h2>Bienvenidos a la Gestión de Farmacia</h2>
+                    <p>
+                        Este sistema permite administrar las categorías de productos de manera eficiente y segura.
+                        Puede agregar, editar y eliminar categorías para mantener el inventario actualizado.
+                    </p>
+                    <p>
+                        Desarrollado con <strong>Spring Boot</strong>, <strong>Thymeleaf</strong> y <strong>Bootstrap 5</strong>, el sistema está diseñado para ser intuitivo, responsivo y adaptable a las necesidades de cualquier farmacia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div th:replace="layout/plantilla :: footer"></div>
+</body>
+</html>
+

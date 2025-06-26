@@ -20,6 +20,11 @@ public class CategoriaController {
         this.categoriaService = categoriaService;
     }
     
+    @GetMapping("/inicio")
+    public String mostrarInicio() {
+        return "inicio";
+    }
+    
     @GetMapping("/")
     public String listarCategorias(Model model) {
         model.addAttribute("categorias", categoriaService.getCategorias());

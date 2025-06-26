@@ -7,6 +7,35 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    
+    <div th:fragment="bienvenidaFarmacia">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/watch?v=0f5P0D1eVLU" 
+                            title="Video informativo"
+                            allowfullscreen>
+                    </iframe>
+                </div>lo
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h2>Bienvenidos a la Gestión de Farmacia</h2>
+                    <p>
+                        Este sistema permite administrar eficientemente las categorías de productos disponibles en la farmacia.
+                        Puede registrar, editar o eliminar categorías según sea necesario.
+                    </p>
+                    <p>
+                        Optimizado con <strong>Spring Boot</strong>, <strong>Thymeleaf</strong> y <strong>Bootstrap</strong>, 
+                        el sistema está pensado para brindar una experiencia de usuario ágil y segura.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div th:fragment="botonesAgregar">
     <div class="mb-3">
@@ -48,6 +77,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         </div>
     </div>
 </div>
+
 
 <div th:fragment="listadoCategorias">
     <div class="card">
